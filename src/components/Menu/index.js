@@ -23,7 +23,9 @@ const Menu = () => {
     dispatch(actionItemClick(itemName));
   };
   return (
+    <> <h1 className="text-center text-xl font-semibold my-2">Hii This is the SketchBook </h1>
     <div className={styles.menuContainer}>
+   
       <div
         className={cx(styles.iconWrapper, {
           [styles.active]: activeMenuItem === MENU_ITEMS.PENCIL,
@@ -59,6 +61,7 @@ const Menu = () => {
         <FontAwesomeIcon icon={faFileArrowDown} className={styles.icon} />
       </div>
     </div>
+    </>
   );
 };
 
